@@ -1,0 +1,32 @@
+"use strict";
+
+function territory(board) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(territory(['++B++++++',
+                           '+BB++++++',
+                           'BB+++++++',
+                           '+++++++++',
+                           '+++++++++',
+                           '++WWW++++',
+                           '++W+W++++',
+                           '++WWW++++',
+                           '+++++++++']))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.deepEqual(territory(['++B++++++',
+                                '+BB++++++',
+                                'BB+++++++',
+                                '+++++++++',
+                                '+++++++++',
+                                '++WWW++++',
+                                '++W+W++++',
+                                '++WWW++++',
+                                '+++++++++']), {'B': 3, 'W': 1})
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
