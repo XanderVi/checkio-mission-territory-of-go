@@ -115,7 +115,6 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                 row.split('').forEach((s,j)=>{
                     if (s === '+'){
                         if (result.W.includes(i*10+j)){
-                            console.log('W', i, j);
                             const attr_square = attr.rect.W;
                             paper.rect(
                                 SIZE*j-os,
@@ -124,7 +123,6 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                         }
 
                         if (result.B.includes(i*10+j)){
-                            console.log('B', i, j);
                             const attr_square = attr.rect.B;
                             paper.rect(
                                 SIZE*j-os,
@@ -146,7 +144,6 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
             }
 
             // set stone
-            console.log(result);
             input.forEach((row, i)=>{
                 row.split('').forEach((s,j)=>{
                     if (s !== '+'){
